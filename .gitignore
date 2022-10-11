@@ -1,0 +1,7 @@
+.git
+.history
+__pycache__
+wmkey.txt
+
+*history/*
+*__pycache__/*
