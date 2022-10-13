@@ -25,6 +25,6 @@ stages:
       inputs:
         repository: 'ahmedrgb/wapp'
         command: 'build'
-        Dockerfile: '**/Dockerfile'
+        Dockerfile: '**/dockerfile'
         tags: '$(tag)'
     
