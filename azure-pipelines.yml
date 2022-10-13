@@ -21,15 +21,8 @@ stages:
       vmImage: ubuntu-latest
     steps:
     - task: Docker@2
-      displayName: Build an image
       inputs:
         repository: 'ahmedrgb/wapp'
-        command: 'build'
+        command: 'buildAndPush'
         Dockerfile: '**/dockerfile'
-        tags: '$(tag)'
-    - task: Docker@2
-      inputs:
-        repository: 'ahmedrgb/wapp'
-        command: 'push'
-        tags: '$(tag)'
     
