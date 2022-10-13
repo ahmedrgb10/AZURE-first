@@ -27,4 +27,9 @@ stages:
         command: 'build'
         Dockerfile: '**/dockerfile'
         tags: '$(tag)'
+    - task: Docker@2
+      inputs:
+        repository: 'ahmedrgb/wapp'
+        command: 'push'
+        tags: '$(tag)'
     
